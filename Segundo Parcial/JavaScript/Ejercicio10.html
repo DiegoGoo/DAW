@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script>
+    function obtenerPosicion(e){
+        x=e.clientX;
+        y=e.clientY;
+        cursor="El cursor del mouse esta : "+ x +"y"+y;
+        document.getElementById("displayArea").innerHTML="";
+    }    
+        
+    </script>
+    </head>
+        <body>
+    <div id="focusArea" onmousemove="obtenerPosicion(event)" onmouseout="detener()">
+        <p>Mueve el cursor encima del texto</p>
+            </div>
+        <p id="displayArea"></p>
+    </body>
+</html>
