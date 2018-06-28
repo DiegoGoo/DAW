@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Pagina sencilla</title>
+        
+        <script>
+            function iniciar(){
+                var labels=document.getElementsByClassName("label");
+                for(x=0; x<labels.length;x++){
+                        labels[x].style.color="Blue";
+                    }
+                    var negritas=document.getElementsByTagName("strong");
+                    for(x=0;x<negritas.length;x++){
+                        negritas[x].style.textTransform="uppercase"; 
+                    }
+                    document.getElementById("apellido").style.fontStyle="italic";
+                    document.querySelectorAll("#apellido b")[0].style.fontStyle="normal";
+                    
+                    /*crear elemento*/
+                
+                var tds=document.getElementsByTagName("td");
+                for(x=0; x<tds.length;x++){
+                var texto=document.createTextNode(x+1);
+                tds[x].appendChild(texto);
+                    tds[x].addEventListener("click",function(){
+                                         alert(x+1);
+                    });
+                }
+                    
+                    var parrafo=document.createElement("p");
+                    var contenido = document.createTextNode("hola mundo!");
+                    parrafo.appendChild(contenido);
+                    document.body.appendChild(parrafo);
+                }
+        </script>
+        <style type="text/css">
+            #tabla{
+                width: 100 px;
+                border-spacing: 0;
+                border: 1px solid #ccc;
+            }
+            #tabla td{
+                width:30px;
+                height:30px;
+                border: solid purple;
+            }
+        
+        
+        </style>
+    </head>
+        <body onload="iniciar();">
+            
+        <p id="titulo"class="label">Esta pagina es <strong>muy sencilla</strong></p>   
+        <p id="nombre" class="label"><strong>Nombre</strong> Diego </p>
+        <p id="apellido" class="label"><b>Apellido</b> Dominguez</p>
+           
+            <table id="tabla">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+             <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </table>                         
+        </body>
+</html>
