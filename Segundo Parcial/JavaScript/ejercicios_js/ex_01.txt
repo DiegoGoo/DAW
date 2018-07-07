@@ -1,0 +1,24 @@
+1.-¿Que evento usaste para poder ejecutar la actualizacion de tus datos?
+
+utilice document.getElementById para seleccionar los elementos que tienen el atributo Id que le asigne 
+y onload para ejecutar la funcion
+
+
+
+2.-¿Que codigo se encarga de agragar los elementos en la lista?
+
+este es el que se encarga de agregar en la lista 
+    <ul>
+            <font color="red"><li id="nombre" class="listado">Nickname:<strong> Diego Dominguez Alfaro</strong></li></font>
+            <font color="red"><li id="pasatiempos" class="listado">Favorites:<strong> Jugar Voleibol y Dibujar</strong></li></font>
+            <font color="red"><li id="ciudad_natal" class="listado">Hometown:<strong> Comitan de Dominguez, Chiapas</strong></li></font>
+    </ul>
+
+3.-¿Que deberia realizar si deseo eliminar los elementos de la lista al realizar un clic al listado?
+
+tendriamos que agregar una funcion que permita eliminar lo cual la sintaxis es
+
+fuction eliminar(nombre elemento){
+
+}
+ya que en este caso al hacer clic en listado no hara ninguna funcion debido a que no se le ha asignado una funcion de eliminar 
