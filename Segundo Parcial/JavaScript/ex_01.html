@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title> introducción JavaScript 15 </title>
+        <meta charset="utf-8"/>
+        <script type="text/javascript">
+            function init(){
+                var nombre=document.getElementById("nombre");
+                nombre.innerHTML="Salvador";
+                document.getElementById("hobbie").innerHTML="Bailar Punta";
+                
+                var text = document.createTextNode("Belize");
+                document.getElementById("lugar_nac").appendChild(text);
+            }
+            function remover(){
+                var lista =document.getElementsByTagName("ul");
+                document.removeChild(lista);
+            }
+        </script>
+    </head>
+    <body onload="init()">
+        <ul onclick="remover()">
+            <li>nombre: <span id="nombre"></span></li>
+            <li>nombre: <span id="hobbie"></span></li>
+            <li>nombre: <span id="lugar_nac"></span></li>
+        </ul>
+    </body>
+</html>
